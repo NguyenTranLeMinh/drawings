@@ -1,0 +1,5 @@
+Với điều kiện postgresql và 'apache-airflow[postgres]' được cài đặt; và USER mặc định postgres đã sửa mật khẩu thành postgres.
+
+Sửa lại 2 tham số 
+sql_alchemy_conn=postgresql+psycopg2://postgres:postgres@localhost/postgres, executor=LocalExecutor 
+trong airflow.cfg
